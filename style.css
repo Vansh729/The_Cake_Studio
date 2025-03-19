@@ -1,0 +1,419 @@
+body {
+    background-color: bisque;
+}
+.golden-text {
+  background: linear-gradient(45deg, #FFD700, #FFB700, #DAA520, #B8860B, #FFD700);
+  -webkit-background-clip: text; /* Ensures gradient is clipped to text */
+  background-clip: text; /* Standard property */
+  -webkit-text-fill-color: transparent; /* Makes text transparent to show background */
+  font-weight: bold;
+  font-size: 2rem;
+  display: inline-block; /* Ensures background applies correctly */
+}
+.text-center{
+  color: #B87D3B;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.divider {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+.divider span {
+  width: 8px;
+  height: 8px;
+  background-color: #B8D5E6;
+  border-radius: 50%;
+}
+
+/* Ensure the dropdown is hidden by default */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;  /* Show dropdown on hover */
+}
+
+/* Optional: Add a smooth transition effect */
+.dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+/* Make it visible when hovered */
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+.cake-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.cake-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+footer {
+    text-align: center;
+    padding: 10px ;
+    background-color: #000000;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+h1 {
+    font-family: 'Avantgarde', sans-serif; /* Apply the Google Font */
+}
+.cake-item {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    height: 300px; /* Ensures all items have a uniform height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cake-item img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: cover; /* Keeps image aspect ratio while fitting within size */
+    border-radius: 5px;
+}
+
+.cake-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: cursive;
+}   
+.cake-item {
+text-align: center;
+margin-bottom: 20px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cake-item img {
+width: 100%;
+height: auto;
+border-radius: 10px;
+transition: transform 0.3s ease;
+}
+
+.cake-item h3 {
+margin-top: 10px;
+font-family: cursive;
+}
+
+.cake-item:hover {
+transform: scale(1.05);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* .cake-item:hover img {
+transform: scale(1.1);
+} */
+/* Customer Card Styling */
+.customer-card {
+background-color: #f8f9fa;
+border-radius: 15px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.customer-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Customer Image Styling */
+.customer-img {
+width: 150px;
+height: 150px;
+object-fit: cover;
+border: 3px solid #fff;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Customer Name Styling */
+.customer-name {
+color: #333;
+font-size: 1.5rem;
+margin-bottom: 10px;
+}
+
+/* Customer Review Styling */
+.customer-review {
+color: #555;
+font-style: italic;
+font-size: 1rem;
+}
+/* General Footer Styling */
+footer {
+    background-color: #000000; /* Dark background color */
+    color: #ecf0f1; /* Light text color */
+    padding: 40px 20px 20px; /* Padding for top, sides, and bottom */
+    font-family: Arial, sans-serif; /* Font family */
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+    justify-content: space-between; /* Space out sections evenly */
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    gap: 20px; /* Add spacing between sections */
+  }
+  
+  /* Footer Section Styling */
+  .footer-section {
+    flex: 1; /* Allow sections to grow and take equal space */
+    min-width: 200px; /* Minimum width for each section */
+    margin-bottom: 20px; /* Add spacing below each section */
+  }
+  
+  .footer-section h3 {
+    font-size: 18px; /* Heading size */
+    margin-bottom: 15px; /* Spacing below the heading */
+    color: #e67e22; /* Accent color for headings */
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    list-style: none; /* Remove bullet points from lists */
+  }
+  
+  .footer-section p {
+    font-size: 14px; /* Text size for paragraphs */
+    line-height: 1.6; /* Line height for better readability */
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px; /* Spacing between list items */
+  }
+  
+  .footer-section ul li a {
+    color: #ecf0f1; /* Link text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 14px; /* Link text size */
+    transition: color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .footer-section ul li a:hover {
+    color: #e67e22; /* Change link color on hover */
+  }
+  
+  /* Social Icons Styling */
+  .social-icons {
+    display: flex;
+    gap: 15px; /* Spacing between icons */
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+.social-icons a img {
+    width: 40px; /* Adjust icon size as needed */
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+  
+  /* Copyright Section Styling */
+  .copyright {
+    text-align: center; /* Center the copyright text */
+    margin-top: 20px; /* Add spacing above the copyright */
+    padding-top: 20px; /* Add padding above the copyright */
+    border-top: 1px solid #fbfafa; /* Add a border above the copyright */
+    font-size: 14px; /* Copyright text size */
+    color: #bdc3c7; /* Light gray color for copyright text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column; /* Stack sections vertically on smaller screens */
+      align-items: center; /* Center-align sections */
+      text-align: center; /* Center-align text */
+    }
+  
+    .social-icons {
+      justify-content: center; /* Center-align social icons */
+    }
+  }
+  @media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 24px;
+    }
+
+    .carousel-caption p {
+        font-size: 18px;
+    }
+
+    .carousel-inner img {
+        height: 300px;
+    }
+}
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-section {
+      margin-bottom: 20px;
+  }
+
+  .social-icons img {
+      width: 30px;
+      margin: 5px;
+  }
+}
+@media (max-width: 991px) {
+  /* Navbar collapses to vertical stack */
+  .navbar-nav {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  /* Navbar items are stacked vertically */
+  .navbar-nav .nav-item {
+      display: block;
+      margin: 10px 0;
+  }
+
+  .navbar-nav .nav-item a {
+      font-size: 18px;
+  }
+
+  /* Navbar brand image */
+  .navbar-brand img {
+      height: 60px;
+  }
+
+  /* Adjust the burger menu on smaller screens */
+  .navbar-toggler {
+      margin-right: 10px;
+  }
+}
+@media (max-width: 576px) {
+    .navbar-nav .nav-item a {
+        font-size: 16px;
+    }
+
+    .navbar-brand img {
+        height: 50px;
+    }
+}
+/* Navbar Styling */
+.navbar {
+  background-color: #000000;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.navbar-nav .nav-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-item a {
+  color: rgb(21, 11, 11);
+  font-size: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: #f39c12;
+}
+
+/* Hamburger Menu (Navbar Toggler) */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: rgb(13, 1, 1);
+}
+
+/* Responsive Styles for Medium Devices (tablets) */
+@media (max-width: 991px) {
+  .navbar-nav {
+      text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+      display: block;
+      margin: 10px 0;
+  }
+
+  /* Make navbar brand image smaller */
+  .navbar-brand img {
+      height: 60px;
+  }
+
+  /* Adjust navbar font size */
+  .navbar-nav .nav-item a {
+      font-size: 22px;
+  }
+}
+
+/* Responsive Styles for Small Devices (mobile) */
+@media (max-width: 576px) {
+  .navbar-nav .nav-item a {
+      font-size: 18px;
+  }
+
+  /* Adjust navbar brand image further */
+  .navbar-brand img {
+      height: 50px;
+  }
+}
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+#backToTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  display: none;  /* Hidden by default */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px 30px; /* Wider horizontal padding */
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+  opacity: 0.6;
+}
+
+#backToTopBtn:hover {
+  background-color: #0056b3;
+}
+
